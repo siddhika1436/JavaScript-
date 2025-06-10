@@ -34,7 +34,7 @@
 // console.log(appUser)
 
 const regularUser = {
-    email: "siddhika123gmail.com",
+    userEmail: "siddhika123gmail.com",
     fullname: {
         userFullName: {
         firstName: "siddhika",
@@ -56,3 +56,15 @@ console.log(obj3);
 
 const obj4 = {...obj1,...obj2} //use this always
 console.log(obj4);
+
+const {userEmail:email} = regularUser;
+console.log(email);
+
+
+//JSON => object hi hai bss usko koi naam nahi hai
+//keys and values yaha string rehti warna error aate coz agar string nahi diya to wo use as a object treat karega and error throw karega
+
+// {
+//     "name" : "siddhika",
+//     "coursename ":  "javascript",
+// }
